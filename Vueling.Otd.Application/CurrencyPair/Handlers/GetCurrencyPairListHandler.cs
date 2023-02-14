@@ -48,9 +48,6 @@ namespace Vueling.Otd.Application.CurrencyPair.Handlers
             }
             catch (Exception srvEx)
             {
-                // If primary rates service fail, the rates should be retrieved from the state. Let's log first.
-                _logger.LogError(srvEx, srvEx.Message);
-
                 try
                 {
                     var currencyPairList = await _currencyPairStateService.GetCurrencyPairListAsync(cancellationToken);
@@ -60,6 +57,11 @@ namespace Vueling.Otd.Application.CurrencyPair.Handlers
                 {
                     // This is the last resource to retrieve data. If this resource fails also an exception is thrown.
                     throw new CurrencyPairListStateException(loadStateEx.Message);
+                }
+                finally
+                {
+                    // If primary rates service fail, the rates should be retrieved from the state. Let's log first.
+                    _logger.LogError(srvEx, srvEx.Message);
                 }
             }
 

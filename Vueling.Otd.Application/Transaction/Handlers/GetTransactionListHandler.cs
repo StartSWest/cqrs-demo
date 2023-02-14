@@ -49,9 +49,6 @@ namespace Vueling.Otd.Application.Transaction.Handlers
             }
             catch (Exception srvEx)
             {
-                // If primary transactions service fail, the transactions should be retrieved from the state. Let's log first.
-                _logger.LogError(srvEx, srvEx.Message);
-
                 try
                 {
                     var transactionList = await _transactionStateService.GetTransactionListAsync(cancellationToken);
@@ -61,6 +58,11 @@ namespace Vueling.Otd.Application.Transaction.Handlers
                 {
                     // This is the last resource to retrieve data. If this resource fails also an exception is thrown.
                     throw new TransactionListStateException(loadStateEx.Message);
+                }
+                finally
+                {
+                    // If primary transactions service fail, the transactions should be retrieved from the state. Let's log first.
+                    _logger.LogError(srvEx, srvEx.Message);
                 }
             }
 
