@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32901.215
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Vueling.Otd.Infrastructure", "Vueling.Otd.Infrastructure\Vueling.Otd.Infrastructure.csproj", "{49F0D75E-6C66-4673-A7FE-18B9BA2DC89D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{A5D5FBF6-57CF-451A-92BD-EBF4B9776568}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Vueling.Otd.Application", "Vueling.Otd.Application\Vueling.Otd.Application.csproj", "{7C7F8257-55F3-4751-B012-8AB7BD178E9B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Vueling.Otd.Domain", "Vueling.Otd.Domain\Vueling.Otd.Domain.csproj", "{12C1A22A-2734-4EFD-BD88-838BDF7FA240}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Vueling.Otd.WebService", "Vueling.Otd.WebService\Vueling.Otd.WebService.csproj", "{C99CBC3C-5265-4F38-95B0-6C7F572A073F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Vueling.Otd.UnitTests", "Vueling.Otd.UnitTests\Vueling.Otd.UnitTests.csproj", "{13170C62-BD50-4FD9-89E4-FA720FE30950}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Vueling.Otd.IntegrationTests", "Vueling.Otd.IntegrationTests\Vueling.Otd.IntegrationTests.csproj", "{72814F53-41C5-4FFC-94C7-A2AF480A6ED4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{49F0D75E-6C66-4673-A7FE-18B9BA2DC89D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49F0D75E-6C66-4673-A7FE-18B9BA2DC89D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49F0D75E-6C66-4673-A7FE-18B9BA2DC89D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49F0D75E-6C66-4673-A7FE-18B9BA2DC89D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7C7F8257-55F3-4751-B012-8AB7BD178E9B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C7F8257-55F3-4751-B012-8AB7BD178E9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C7F8257-55F3-4751-B012-8AB7BD178E9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C7F8257-55F3-4751-B012-8AB7BD178E9B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{12C1A22A-2734-4EFD-BD88-838BDF7FA240}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{12C1A22A-2734-4EFD-BD88-838BDF7FA240}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{12C1A22A-2734-4EFD-BD88-838BDF7FA240}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{12C1A22A-2734-4EFD-BD88-838BDF7FA240}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C99CBC3C-5265-4F38-95B0-6C7F572A073F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C99CBC3C-5265-4F38-95B0-6C7F572A073F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C99CBC3C-5265-4F38-95B0-6C7F572A073F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C99CBC3C-5265-4F38-95B0-6C7F572A073F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{13170C62-BD50-4FD9-89E4-FA720FE30950}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{13170C62-BD50-4FD9-89E4-FA720FE30950}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{13170C62-BD50-4FD9-89E4-FA720FE30950}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{13170C62-BD50-4FD9-89E4-FA720FE30950}.Release|Any CPU.Build.0 = Release|Any CPU
+		{72814F53-41C5-4FFC-94C7-A2AF480A6ED4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72814F53-41C5-4FFC-94C7-A2AF480A6ED4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72814F53-41C5-4FFC-94C7-A2AF480A6ED4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72814F53-41C5-4FFC-94C7-A2AF480A6ED4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{13170C62-BD50-4FD9-89E4-FA720FE30950} = {A5D5FBF6-57CF-451A-92BD-EBF4B9776568}
+		{72814F53-41C5-4FFC-94C7-A2AF480A6ED4} = {A5D5FBF6-57CF-451A-92BD-EBF4B9776568}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {28A24BE6-4E5F-4A67-BF72-8D812E82FF08}
+	EndGlobalSection
+EndGlobal
